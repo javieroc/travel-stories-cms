@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "travel_stories",
+  "info": {
+    "singularName": "travel-story",
+    "pluralName": "travel-stories",
+    "displayName": "Travel Story",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "story": {
+      "type": "richtext",
+      "required": true,
+      "minLength": 1
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
